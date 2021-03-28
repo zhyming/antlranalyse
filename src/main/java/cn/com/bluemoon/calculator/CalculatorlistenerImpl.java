@@ -17,7 +17,13 @@ public class CalculatorlistenerImpl extends CalculatorBaseListener {
     }
 
     @Override
+    public void exitCal(CalculatorParser.CalContext ctx) {
+        super.exitCal(ctx);
+    }
+
+    @Override
     public void exitAdd(CalculatorParser.AddContext ctx) {
+        ctx.value = ctx.exp(0).value + ctx.exp(1).value;
         //入栈从往右，出栈从右到左
         Integer right = stack.pop();
         Integer left = stack.pop();

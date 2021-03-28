@@ -1,7 +1,11 @@
 MUL=1
-ADD=2
-INT=3
-NEWLINE=4
-WS=5
+DIV=2
+ADD=3
+SUB=4
+INT=5
+NEWLINE=6
+WS=7
 '*'=1
-'+'=2
+'/'=2
+'+'=3
+'-'=4

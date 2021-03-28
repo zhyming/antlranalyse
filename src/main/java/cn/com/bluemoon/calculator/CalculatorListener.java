@@ -1,4 +1,4 @@
-// Generated from E:/code/antlranalyse/g\Calculator.g4 by ANTLR 4.9.1
+// Generated from E:/idea-workspace/antlranalyse/g\Calculator.g4 by ANTLR 4.9.1
 package cn.com.bluemoon.calculator;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -18,6 +18,18 @@ public interface CalculatorListener extends ParseTreeListener {
 	 */
 	void exitCal(CalculatorParser.CalContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code DIV}
+	 * labeled alternative in {@link CalculatorParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterDIV(CalculatorParser.DIVContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code DIV}
+	 * labeled alternative in {@link CalculatorParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitDIV(CalculatorParser.DIVContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code Add}
 	 * labeled alternative in {@link CalculatorParser#exp}.
 	 * @param ctx the parse tree
@@ -29,6 +41,18 @@ public interface CalculatorListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAdd(CalculatorParser.AddContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Sub}
+	 * labeled alternative in {@link CalculatorParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterSub(CalculatorParser.SubContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Sub}
+	 * labeled alternative in {@link CalculatorParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitSub(CalculatorParser.SubContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Mul}
 	 * labeled alternative in {@link CalculatorParser#exp}.

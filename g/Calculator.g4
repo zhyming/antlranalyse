@@ -2,7 +2,7 @@ grammar Calculator;
 
 cal : exp;
 
-exp
+exp returns [Integer value]
     : exp MUL exp       #Mul
     | exp DIV exp       #DIV
     | exp ADD exp       #Add

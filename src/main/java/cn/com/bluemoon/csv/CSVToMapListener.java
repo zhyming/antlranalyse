@@ -36,7 +36,8 @@ public class CSVToMapListener extends CSVBaseListener {
     @Override
     public void exitRow(CSVParser.RowContext ctx) {
 
-        //判读当前节点父节点是否为HeaderContext，如果是，则为标题行
+        //判读当前节点父节点是否为HeaderContext，如果是，则为标题行 以下两种方式都可以
+        //if (ctx.getParent().getRuleIndex() == CSVParser.RULE_header) return;
         if (ctx.getParent() instanceof CSVParser.HeaderContext) {
             return;
         }
